@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.platform-container {
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+.nav-btn {
+    padding: 12px 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #666;
+    border-bottom: 3px solid transparent;
+}
+.nav-btn.active {
+    color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+/* VIEWS */
+.view { padding: 20px; }
+.hidden { display: none !important; }
+
+/* STUDY POINT */
+.material-point {
+    background: #eef3ff;
+    border-left: 5px solid #007bff;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+/* QUIZ BUTTONS */
+.btn-grid {
+    display: grid;
+    gap: 15px;
+}
+.btn {
+    padding: 12px;
+    border-radius: 5px;
+    background: #eee;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover { background: #007bff; color: #fff; }
+
+.correct { background: #28a745 !important; color: white !important; }
+.incorrect { background: #dc3545 !important; color: white !important; }
+
+.control-btn {
+    background: #28a745;
+    padding: 12px 25px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+.control-btn:hover { background: #218838; }
+
+/* RESULTS */
+#results-summary {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 6px;
+}
+.final-score {
+    font-size: 2.5em;
+    color: green;
+    font-weight: bold;
+}

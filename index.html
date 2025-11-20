@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="platform-container">
+        <h1>📚 E-Learning Platform with Quiz Support</h1>
+        
+        <nav>
+            <button id="nav-study" class="nav-btn active">Study Material</button>
+            <button id="nav-quiz" class="nav-btn">Start Quiz</button>
+            <button id="nav-results" class="nav-btn">Results</button>
+        </nav>
+
+        <main id="content-area">
+            
+            <!-- STUDY VIEW -->
+            <section id="study-view" class="view">
+                <h2>Module 1: Web Development Basics</h2>
+                <div id="study-content"></div>
+            </section>
+
+            <!-- QUIZ VIEW -->
+            <section id="quiz-view" class="view hidden">
+                <h2 id="question-text">Question appears here</h2>
+                <div id="dynamic-content"></div>
+
+                <button id="submit-btn" class="hidden control-btn">Submit</button>
+                <button id="next-btn" class="hidden control-btn">Next</button>
+            </section>
+
+            <!-- RESULTS VIEW -->
+            <section id="results-view" class="view hidden">
+                <h2>Quiz Results</h2>
+                <div id="results-summary"></div>
+                <button id="retake-btn" class="control-btn">Retake Quiz</button>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
